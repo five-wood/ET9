@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /e/ET_source/ET/*.sln)",
+      "Bash(ls e:/ET_source/ET/*.sln)",
+      "Bash(code --list-extensions)",
+      "Bash(dotnet --version)",
+      "Bash(code --install-extension ms-dotnettools.csharp)",
+      "Bash(code --install-extension ms-dotnettools.csdevkit)",
+      "Bash(xargs grep -l \"failed to load\\\\|project.*load\")",
+      "Bash(grep -h \"TargetFramework\\\\|Sdk=\" /e/ET_source/ET/*.csproj)",
+      "Bash(grep -h \"TargetFramework\" /e/ET_source/ET/DotNet/**/*.csproj)",
+      "Bash(xargs grep -l \"net6\\\\|net7\\\\|net8\\\\|net9\\\\|<TargetFramework>\")",
+      "Bash(code --install-extension visualstudiotoolsforunity.vstuc)",
+      "Bash(xargs grep -l \"unity\\\\|Unity\\\\|project.*load\\\\|failed\" -i)",
+      "Bash(xargs cat)",
+      "Bash(where claude)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "mcp__unityMCP__manage_gameobject",
+      "Bash(python -c \":*)",
+      "Bash(curl -s -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"resources/read\"\",\"\"params\"\":{\"\"uri\"\":\"\"mcpforunity://editor/state\"\"}}')",
+      "Bash(curl -s -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"resources/read\"\",\"\"params\"\":{\"\"uri\"\":\"\"mcpforunity://editor/state\"\"}}')",
+      "Bash(curl -s -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"initialize\"\",\"\"params\"\":{\"\"protocolVersion\"\":\"\"2024-11-05\"\",\"\"capabilities\"\":{},\"\"clientInfo\"\":{\"\"name\"\":\"\"claude\"\",\"\"version\"\":\"\"1.0\"\"}}}')",
+      "Bash(curl -s -D - -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"initialize\"\",\"\"params\"\":{\"\"protocolVersion\"\":\"\"2024-11-05\"\",\"\"capabilities\"\":{},\"\"clientInfo\"\":{\"\"name\"\":\"\"claude\"\",\"\"version\"\":\"\"1.0\"\"}}}')",
+      "Bash(dotnet build /e/ET_source/ET/ET.sln --no-restore -v quiet)"
+    ]
+  }
+}
