@@ -23,7 +23,9 @@
       "Bash(curl -s -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"resources/read\"\",\"\"params\"\":{\"\"uri\"\":\"\"mcpforunity://editor/state\"\"}}')",
       "Bash(curl -s -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"initialize\"\",\"\"params\"\":{\"\"protocolVersion\"\":\"\"2024-11-05\"\",\"\"capabilities\"\":{},\"\"clientInfo\"\":{\"\"name\"\":\"\"claude\"\",\"\"version\"\":\"\"1.0\"\"}}}')",
       "Bash(curl -s -D - -X POST http://127.0.0.1:8080/mcp -H \"Content-Type: application/json\" -H \"Accept: application/json, text/event-stream\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"initialize\"\",\"\"params\"\":{\"\"protocolVersion\"\":\"\"2024-11-05\"\",\"\"capabilities\"\":{},\"\"clientInfo\"\":{\"\"name\"\":\"\"claude\"\",\"\"version\"\":\"\"1.0\"\"}}}')",
-      "Bash(dotnet build /e/ET_source/ET/ET.sln --no-restore -v quiet)"
+      "Bash(dotnet build /e/ET_source/ET/ET.sln --no-restore -v quiet)",
+      "Bash(fi)",
+      "Bash(done)"
     ]
   }
 }
